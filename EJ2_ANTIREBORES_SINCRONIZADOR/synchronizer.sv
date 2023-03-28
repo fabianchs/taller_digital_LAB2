@@ -25,19 +25,18 @@ module synchronizer(button, out_sync, clk,rst);
     input logic button, clk,rst;
     output logic out_sync;
     
-    logic [3:0]sig;
+    logic sig_0,sig_1, sig_2;
     
     
     assign sig={sig,button};
     
-     genvar i;
-     generate 
-         for(i=1; i<4;i++) begin
-           flip_flop sync_op(.D(sig[i-1]),.Q(sig[i]), .clk(clk), .rst(rst)); 
-         end
-     endgenerate
+     flip_flop FO(.D(button),.f_out(sig_0), .clk(clk), .rst(rst));
+     flip_flop F1(.D(sig_0),.f_out(sig_1), .clk(clk), .rst(rst));
+     flip_flop F2(.D(sig_1),.f_out(sig_2), .clk(clk), .rst(rst));
+     flip_flop F3(.D(sig_2),.f_out(out_sync), .clk(clk), .rst(rst));
+     
     
-    assign out_sync=sig[3];
+
 
     
 endmodule

@@ -3,17 +3,17 @@
 
 module flip_flop(
     input logic D, rst, clk,
-    output logic Q,nQ
+    output logic f_out,f_nout
     );
     
     always_ff @(posedge clk, posedge rst) begin
     
         if (rst) begin 
-            Q=0;
-            nQ=1;
+            f_out=0;
+            f_nout=1;
         end else begin
-            Q=D;
-            nQ=~D;
+            f_out=D;
+            f_nout=~D;
         end
     
     end

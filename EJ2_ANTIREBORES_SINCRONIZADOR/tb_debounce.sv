@@ -45,7 +45,7 @@ module tb_debounce;
     
     #60
     sw<=1'b1;
-    #600
+    #600000000
     sw<=1;
     #60
     sw<=0;
@@ -53,7 +53,7 @@ module tb_debounce;
     sw<=1;
     #60
     sw<=0;   
-    #60
+    #600000
     sw<=1;
     #60
     sw<=0;
