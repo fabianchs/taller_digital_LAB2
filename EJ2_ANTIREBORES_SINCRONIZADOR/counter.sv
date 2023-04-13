@@ -20,21 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module counter(out,  enable, clk, reset);
+module counter(out,  enable, clk, reset, rst_enable);
 
  
 
     input logic enable, clk, reset;
     output logic [7:0] out;
-
+    output logic rst_enable;
+    initial begin out=8'b00000001; end
 
 
     always @(posedge clk)
     if (reset) begin
-      out <= 8'b0 ;
+      out <= 8'b00000000 ;
     end else if (enable) begin
-      out <= out + 1;
-    end
+      out <= out + 1'd1;
+    end 
 endmodule
-
 

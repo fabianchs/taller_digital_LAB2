@@ -24,7 +24,7 @@ module debounce_module(clk, reset, sw, db
         
     //número de contador de bits (2^N*20nS= 10ms tick)
     
-    localparam N=19;
+    localparam N=2;
     
     //declaración de las señales
     
