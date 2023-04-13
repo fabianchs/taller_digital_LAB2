@@ -22,7 +22,8 @@ __Testbench del contador__
 ![Diagrama de bloques de todo el sistema](/images/EJ2_TB_COUNTER.png)
 
 
-__Diagrama del sincronizador__
+
+__Testbench del sincronizador__
 
 </br>
 
