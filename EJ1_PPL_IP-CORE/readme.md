@@ -7,3 +7,9 @@ __Diagrama de bloques del módulo__
 </br>
 
 ![Diagrama de bloques de todo el sistema](/images/EJ1_DIAGRAM.png)
+
+__Testbench del módulo__
+</br>
+
+
+![Diagrama de bloques de todo el sistema](/images/EJ1_TB.png)
