@@ -19,4 +19,4 @@ __Diagrama de la activación de señales__
 __Diagrama del siete segmentos__
 </br>
 
-![Diagrama de bloques de todo el sistema](/images/EJ3_SEVEN_SEGMENTSS.png.png)
+![Diagrama de bloques de todo el sistema](/images/EJ3_SEVEN_SEGMENTSS.png)
